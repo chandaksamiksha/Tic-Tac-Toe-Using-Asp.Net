@@ -10,6 +10,7 @@ namespace TicTacToe
     public partial class Default : System.Web.UI.Page
     {
        static int player = 1;
+        Button button;
         int hasWinner = 0;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -17,178 +18,26 @@ namespace TicTacToe
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button_Click(object sender, EventArgs e)
         {
-            if (player == 1 && Button1.Text.Equals("."))
+            button = (Button)sender;
+            if (player == 1 && button.Text.Equals("."))
             {
-                Button1.Text = "X";
+                button.Text = "X";
                 player = 2;
                 Label1.Text = "Player 2 ";
-                WinningCondition(Button1.Text);
+                WinningCondition(button.Text);
             }
-            if (player == 2 && Button1.Text.Equals("."))
+            if (player == 2 && button.Text.Equals("."))
             {
-                Button1.Text = "O";
+                button.Text = "O";
                 player = 1;
                 Label1.Text = "Player 1 ";
-                WinningCondition(Button1.Text);
-            }
-            DrawCondition();
-
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button2.Text.Equals("."))
-            {
-                Button2.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button2.Text);
-            }
-            if (player == 2 && Button2.Text.Equals("."))
-            {
-                Button2.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button2.Text);
+                WinningCondition(button.Text);
             }
             DrawCondition();
         }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button3.Text.Equals("."))
-            {
-                Button3.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button3.Text);
-            }
-            if (player == 2 && Button3.Text.Equals("."))
-            {
-                Button3.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button3.Text);
-            }
-            DrawCondition();
-        }
-
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button4.Text.Equals("."))
-            {
-                Button4.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button4.Text);
-            }
-            if (player == 2 && Button4.Text.Equals("."))
-            {
-                Button4.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button4.Text);
-            }
-            DrawCondition();
-        }
-
-        protected void Button5_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button5.Text.Equals("."))
-            {
-                Button5.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button5.Text);
-            }
-            if (player == 2 && Button5.Text.Equals("."))
-            {
-                Button5.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button5.Text);
-            }
-            DrawCondition();
-        }
-
-        protected void Button6_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button6.Text.Equals("."))
-            {
-                Button6.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button6.Text);
-            }
-            if (player == 2 && Button6.Text.Equals("."))
-            {
-                Button6.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button6.Text);
-            }
-            DrawCondition();
-        }
-
-        protected void Button7_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button7.Text.Equals("."))
-            {
-                Button7.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button7.Text);
-            }
-            if (player == 2 && Button7.Text.Equals("."))
-            {
-                Button7.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button7.Text);
-            }
-            DrawCondition();
-        }
-
-        protected void Button8_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button8.Text.Equals("."))
-            {
-                Button8.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button8.Text);
-            }
-            if (player == 2 && Button8.Text.Equals("."))
-            {
-                Button8.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button8.Text);
-            }
-            DrawCondition();
-        }
-
-        protected void Button9_Click(object sender, EventArgs e)
-        {
-            if (player == 1 && Button9.Text.Equals("."))
-            {
-                Button9.Text = "X";
-                player = 2;
-                Label1.Text = "Player 2 ";
-                WinningCondition(Button9.Text);
-            }
-            if (player == 2 && Button9.Text.Equals("."))
-            {
-                Button9.Text = "O";
-                player = 1;
-                Label1.Text = "Player 1 ";
-                WinningCondition(Button9.Text);
-            }
-            DrawCondition();
-        }
-
+        
         protected void WinningCondition(string text)
         {
             if ((Button1.Text.Equals(text) && Button2.Text.Equals(text) && Button3.Text.Equals(text)) ||

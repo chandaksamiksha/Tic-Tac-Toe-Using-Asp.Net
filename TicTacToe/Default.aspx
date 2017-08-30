@@ -28,19 +28,19 @@
 <article id="mainGame">
  <table id="board">
 <tr>
-<td><asp:Button ID="Button1" runat="server" Height="45px" Width="45px" OnClick="Button1_Click" Text="." /></td>
- <td><asp:Button ID="Button2" runat="server" Height="45px" Width="45px" OnClick="Button2_Click" Text="." /></td>
-<td class="auto-style1"><asp:Button ID="Button3" runat="server" Height="45px" Width="45px" OnClick="Button3_Click" Text="." /></td>
+<td><asp:Button ID="Button1" runat="server" Height="45px" Width="45px" OnClick="Button_Click" Text="." /></td>
+ <td><asp:Button ID="Button2" runat="server" Height="45px" Width="45px" OnClick="Button_Click" Text="." /></td>
+<td class="auto-style1"><asp:Button ID="Button3" runat="server" Height="45px" Width="45px" OnClick="Button_Click" Text="." /></td>
 </tr>
 <tr>
-<td><asp:Button ID="Button4" runat="server" Height="45px" Width="45px" OnClick="Button4_Click" Text="." /> </td>
-<td><asp:Button ID="Button5" runat="server" Style="width: 45px; height: 45px;" OnClick="Button5_Click" Text="." /></td>
-<td class="auto-style1"><asp:Button ID="Button6" runat="server" Style="width: 45px; height: 45px;" OnClick="Button6_Click" Text="." /></td>
+<td><asp:Button ID="Button4" runat="server" Height="45px" Width="45px" OnClick="Button_Click" Text="." /> </td>
+<td><asp:Button ID="Button5" runat="server" Style="width: 45px; height: 45px;" OnClick="Button_Click" Text="." /></td>
+<td class="auto-style1"><asp:Button ID="Button6" runat="server" Style="width: 45px; height: 45px;" OnClick="Button_Click" Text="." /></td>
 </tr>
 <tr>
-<td><asp:Button ID="Button7" runat="server" Height="45px" Width="45px" OnClick="Button7_Click" Text="." /></td>
-<td><asp:Button ID="Button8" runat="server"  Style="width: 45px; height: 45px;" OnClick="Button8_Click" Text="." /></td>
-<td class="auto-style1"><asp:Button ID="Button9" runat="server"  Style="width: 45px; height: 45px;" OnClick="Button9_Click" Text="." /></td>
+<td><asp:Button ID="Button7" runat="server" Height="45px" Width="45px" OnClick="Button_Click" Text="." /></td>
+<td><asp:Button ID="Button8" runat="server"  Style="width: 45px; height: 45px;" OnClick="Button_Click" Text="." /></td>
+<td class="auto-style1"><asp:Button ID="Button9" runat="server"  Style="width: 45px; height: 45px;" OnClick="Button_Click" Text="." /></td>
 </tr>
 </table>
 </article>
