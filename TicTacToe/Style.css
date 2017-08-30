@@ -1,0 +1,74 @@
+﻿body {
+    margin: 0;
+    align-content:center;
+}
+
+section {
+   
+    align-content: center;
+}
+
+
+#board {
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+    align-content:center;
+}
+
+    #board td {
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        width: 7em;
+        height: 7em;
+        align-content: center;
+    }
+
+    #board tr td:first-child {
+        border-left: none;
+    }
+
+    #board tr:first-child td {
+        border-top: none;
+    }
+
+#playerName {
+    font-weight: bold;
+}
+
+#winnerMessage {
+    text-align: center;
+    margin-top: 5em;
+    display: none;
+}
+
+#playAgain {
+    display: none;
+}
+
+#playAgainButton {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    align-content: center;
+    background-color:darkgray;
+}
+
+#currentTurn {
+    margin-top: 5em;
+    text-align: center;
+    
+}
+button {
+    font-family: 'Segoe UI',Tahoma,Arial,Helvetica,sans-serif;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    align-content: center;
+}
